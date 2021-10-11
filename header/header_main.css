@@ -1,0 +1,19 @@
+header{
+    position: absolute;
+    background: none;
+    box-shadow: none;
+}
+.wrapper{
+    background: none;
+}
+header{
+    color:white;
+
+}
+.logo{
+    filter: brightness(73);
+}
+main{
+      /* display: flex; */
+      margin-top: 0 !important;
+}

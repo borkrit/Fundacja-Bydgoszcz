@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="logo.png" alt="" class="logo">
+            <div class="tabs">
+                <ul>
+                    <li>O nas</li>
+                    <li>Projekty</li>
+                    <li>Aktualności</li>
+                    <li>Blog</li>
+                    <li>Kontakt</li>
+                </ul>
+                <button class='tab-btn--red'>przekaż darowiznę</button>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper">
+        
+    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+    
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'London')">O nas</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Paris')">Statut</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Tokyo')">Sprawozdanie finansowe</button>
+  </div>
+  
+<div style="margin-left:130px">
+    
+  
+    <div id="London" class="w3-container city" style="display:none">
+      <h2>Kim jesteśmy?</h2>
+      <p>Maxwell's equations—the foundation of classical electromagnetism—describe light as a wave that moves with a characteristic velocity. The modern view is that light needs no medium of transmission, but Maxwell and his contemporaries were convinced that light waves were propagated in a medium, analogous to sound propagating in air, and ripples propagating on the surface of a pond.</p>
+      <p>This hypothetical medium was called the luminiferous aether, at rest relative to the "fixed stars" and through which the Earth moves. Fresnel's partial ether dragging hypothesis ruled out the measurement of first-order (v/c) effects, and although observations of second-order effects (v2/c2) were possible in principle, Maxwell thought they were too small to be detected with then-current technology.</p>
+        <img src="" alt="">
+        <h2>Nasza misja</h2>
+        <p>Physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity, a relationship between entities, or part of a conceptual framework.</p>
+        
+        <h2>Jak działamy?</h2>
+        <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of knowledge in which knowledge about space can be both a priori and synthetic. According to Kant, knowledge about space is synthetic, in that statements about space are not simply true by virtue of the meaning of the words in the statement. In his work, Kant rejected the view that space must be either a substance or relation.</p>
+        <p>Instead he came to the conclusion that space and time are not discovered by humans to be objective features of the world, but imposed by us as part of a framework for organizing experience.</p>
+    
+    
+    </div>
+  
+    <div id="Paris" class="w3-container city" style="display:none">
+      <h2>Statut</h2>
+      <p> <b>Rozdział 1. Postanowienia ogólne</b></p> 
+      <p>Stowarzyszenie nosi nazwę Stowarzyszenie „Otwarte Klatki” w dalszych postanowieniach statutu zwane Stowarzyszeniem.
+    </p>
+    <p>
+        Stowarzyszenie jest dobrowolnym, samorządnym i trwałym zrzeszeniem o celach niezarobkowych i jest zawiązane dla prowadzenia działalności na rzecz szeroko rozumianej edukacji i ochrony środowiska, w tym głównie na rzecz humanitarnego traktowania zwierząt.
+
+    </p>
+    <p>
+        Siedzibą stowarzyszenia jest Miasto Poznań. Terenem działań jest Rzeczpospolita Polska oraz zagranica. Dla właściwego realizowania swoich celów Stowarzyszenie może prowadzić działalność poza granicami kraju, pod warunkiem, że prawo danego państwa dopuszcza taką działalność.
+
+    </p>
+    <p>Stowarzyszenie jest zawiązane na czas nieokreślony. Stowarzyszenie działa na podstawie przepisów ustawy Prawo o Stowarzyszeniach (Dz. U. 1989 r. Nr 20 poz. 104) z późniejszymi zmianami oraz niniejszego statutu.
+    </p>
+    <p>
+        Stowarzyszenie ma prawo używania pieczęci i logo. Wzór pieczęci i logo ustala Zarząd Stowarzyszenia.
+    </p>
+        <p><b>Rozdział 2. Cele i środki działania
+        </b></p>
+        <p>
+            § 6
+            Celami Stowarzyszenia są:
+
+        </p>
+    </div>
+  
+    <div id="Tokyo" class="w3-container city" style="display:none">
+      <h2>Sprawozdanie finansowe</h2>
+     
+    </div>
+  
+  </div>
+    </main>
+    
+<script>
+    function openCity(evt, cityName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-red";
+    }
+    </script>
+</body>
+</html>
