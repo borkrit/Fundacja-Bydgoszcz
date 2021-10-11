@@ -7,11 +7,13 @@
     padding: 0;
     
 }
+
 body{
     font-family: var(--montserrat);
     font-weight: 700;
-    
+   
 }
+
 h2{
     font-family: var(--montserrat) !important;
     font-style: normal;
@@ -118,7 +120,9 @@ main{
     line-height: 20px;
     cursor: pointer;
 }
-
+.center-btn{
+    text-align: center;
+}
 
 .first-screen{
     width: 100vw;
@@ -170,6 +174,9 @@ main{
 .theard-screen{
     margin-bottom: 130px;
     padding-top: 130px;
+}
+.theard-screen h2{
+    text-align: center;
 }
 .container-actuals{
     display: flex;
@@ -287,6 +294,29 @@ main{
      width: 80px;
      height: 80px;
      margin-bottom: 30px;
+}
+
+.content-five{
+    text-align: center;
+    margin: 130px 0;
+   
+}
+.content-five h3{
+    font-family: var(--montserrat);
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 59px;
+
+color: #00705D;
+}
+.wspolpraca{
+    margin-top: 80px;
+    display: flex;
+     justify-content: space-evenly;
+}
+.wspolpraca img{
+    object-fit: contain;
 }
 
 footer{
