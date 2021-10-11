@@ -127,7 +127,7 @@ main{
 .first-screen{
     width: 100vw;
     height: 100vh;
-    background-image: url(/main_bg.png);
+    background-image: url(main_bg.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +139,7 @@ main{
 }
 .second-screen{
     padding: 130px 0;
-    background-image: url(/Rectangle7.png);
+    background-image: url(Rectangle7.png);
 }
 .second-content-img{
     width: 380px;
@@ -238,7 +238,7 @@ main{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    background-image: url(/Rectangle7.png);
+    background-image: url(Rectangle7.png);
     
   
 }
@@ -287,7 +287,7 @@ main{
     text-align: center;
     align-items: center;
     justify-content: center;
-     background-image: url(/Ellipse1.png);
+     background-image: url(Ellipse1.png);
      background-repeat: no-repeat;
      /* background: cadetblue; */
      background-position: center;
