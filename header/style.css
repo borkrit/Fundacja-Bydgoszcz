@@ -208,6 +208,7 @@ main{
 .actual-item a {
     text-decoration: none;
     
+    
 }
 .actual-item a:hover .title {
     color: #00997F;
