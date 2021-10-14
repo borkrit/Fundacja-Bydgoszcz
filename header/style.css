@@ -11,7 +11,8 @@
 body{
     font-family: var(--montserrat);
     font-weight: 700;
-   
+  
+   overflow-x: hidden;
 }
 
 h2{
@@ -88,6 +89,16 @@ main{
 .tabs ul li{
     margin-right: 30px;
    
+}
+.tabs ul li a {
+   
+    text-decoration: none;
+    color: #111111
+}
+.tabs ul li a:hover {
+   
+    text-decoration: none;
+    color: #00997F
 }
 .tab-btn--red{ 
     width: 180px;
@@ -184,6 +195,7 @@ main{
     justify-content: space-between;
     margin: 60px 0;
 }
+
 
 
 
@@ -327,9 +339,14 @@ footer{
     color:#FFFFFF;
 
 }
+footer .logo{
+    filter: brightness(73);
+   
+}
 footer .wrapper{
     display: flex;
     flex-direction: column;
+    background: none;
 }
 footer .menu ul{
     list-style: none;
@@ -351,4 +368,149 @@ footer .second-block{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+}
+
+.wrapper-contact{
+    margin-top: 100px;
+    margin-bottom: 240px;
+    margin:100px auto 240px;
+    width: 780px;
+    
+}
+.wrapper-contact h1 {
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #00997F
+}
+.wrapper-contact .contact-text{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    color: #111111;
+    margin-top: 40px;
+
+}
+.wrapper-contact .block-phone{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+
+}
+.wrapper-contact .konto{
+    margin-top: 40px;
+    justify-content: space-around;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+
+}
+
+
+.post-wrapper{
+    width: calc(100% - 260px);
+    margin: 100px auto 150px ;
+}
+.post-wrapper-text{
+    width: 769px;
+    margin: auto;
+}
+.post-wrapper-text h1 { 
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #00997F;
+    margin-bottom: 10px;
+}
+.post-wrapper-text p {
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 31px;
+    color: #111111;
+}
+.post-wrapper-text .data{
+    font-family: var(--lora);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px; 
+    color: #111111;
+    
+}
+.post-first{
+    margin-top: 40px;
+}
+.img-container{
+   margin: 40px 0;
+   display: flex;
+   text-align: center;
+}
+.w-480{
+    width: 480px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.w-380{
+    width: 380px;
+    object-fit: contain;
+}
+.w-680{
+    width: 680px;
+    
+    overflow: hidden;
+}
+.w-580{
+    width: 580px;
+    margin: auto;
+    overflow: hidden;
+}
+.w-1180{
+    margin: auto;
+    width: 1180px;
+    overflow: hidden;
+}
+.img-container img{
+   
+    object-fit: contain;
+}
+.img-container span{
+    font-family: var(--lora);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #111111;
+}
+.flc{
+    flex-direction: column;
+}
+.flw{
+    flex-wrap: wrap;
+}
+
+.rezero-margin{
+    margin-top: 0;
+    padding-top: 0;
+}
+.mb80{
+    margin-bottom: 80px;
 }
