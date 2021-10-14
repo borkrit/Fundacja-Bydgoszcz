@@ -13,6 +13,7 @@ body{
     font-weight: 700;
   
    overflow-x: hidden;
+    background: #F9F9F9;
 }
 
 h2{
@@ -203,6 +204,14 @@ main{
     width: 30%;
     max-width: 100%;
   
+}
+.actual-item a {
+    text-decoration: none;
+    
+}
+.actual-item a:hover .title {
+    color: #00997F;
+
 }
 @media only screen and (max-width: 600px) {
     .actual-item{
@@ -421,9 +430,20 @@ footer .second-block{
 }
 
 
-.post-wrapper{
+.post-wrapper,
+.project-wrapper{
     width: calc(100% - 260px);
     margin: 100px auto 150px ;
+}
+.project{
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.project-img img{
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
 }
 .post-wrapper-text{
     width: 769px;
@@ -464,6 +484,12 @@ footer .second-block{
    display: flex;
    text-align: center;
 }
+
+.w-280{
+    width: 280px;
+    height: 400px;
+}
+
 .w-480{
     width: 480px;
     margin-right: 20px;
