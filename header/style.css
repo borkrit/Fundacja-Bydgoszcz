@@ -703,8 +703,49 @@ footer .second-block .year{
 .year2{
     display: none;
 }
+.rozdzial,
+.set-files{
+    margin-top: 40px;
+}
+.set-files p{
+    margin-bottom: 20px;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    text-decoration-line: underline;
+
+    color: #00997F;
+}
+.set-files p .fa-file-pdf{
+    margin-right: 10px;
+    color: red;
+   font-size: 36px;
+}
+.prawilo{
+    margin-top: 10px;
+}
+.prawilo p{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+    
+}
+
+
+
 /* Media query  */
-@media screen and (max-width: 1086px) {
+@media screen and (max-width: 1104px) {
+    .wrapper {
+        width: calc(100vw - 80px);
+    }
+
     .first-block .about-us {
         
         margin-left: 90px;
@@ -713,7 +754,7 @@ footer .second-block .year{
         margin-right: 0;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 959px) {
     .wrapper-contact{
         width: 96%;
         padding: 10px;
@@ -866,6 +907,12 @@ footer .second-block .year{
 }
 
 @media screen and (max-width: 468px) {
+    .wrapper {
+        width: calc(100vw - 35px);
+    }
+    .tab-about{
+        font-size: 16px;
+    }
     .left-text,
     .right-text,
     .right-img,
@@ -880,6 +927,9 @@ footer .second-block .year{
     
 }
 @media screen and (max-width: 374px) {
+   .about-title{
+       font-size: 35px;
+   }
     footer .second-block .krs{
         width: 100%;
     /* align-items: center; */

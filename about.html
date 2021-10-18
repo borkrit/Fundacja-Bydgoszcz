@@ -49,7 +49,7 @@
   <div class="main-about">
     
   
-    <div id="London" class=" tabslink tab-padding-first" style="display:block">
+    <div id="London" class=" tabslink tab-padding-first" style="display:none">
       <h2 class="about-title first-title">Kim jesteśmy?</h2>
       <p class="about-text text-img">Maxwell's equations—the foundation of classical electromagnetism—describe light as a wave that moves with a characteristic velocity. The modern view is that light needs no medium of transmission, but Maxwell and his contemporaries were convinced that light waves were propagated in a medium, analogous to sound propagating in air, and ripples propagating on the surface of a pond.
         <br/>
@@ -100,35 +100,56 @@
     </div>
   
     <div id="Paris" class="tabslink tab-padding" style="display:none">
-      <h2>Statut</h2>
-      <p> <b>Rozdział 1. Postanowienia ogólne</b></p> 
-      <p>Stowarzyszenie nosi nazwę Stowarzyszenie „Otwarte Klatki” w dalszych postanowieniach statutu zwane Stowarzyszeniem.
-    </p>
-    <p>
-        Stowarzyszenie jest dobrowolnym, samorządnym i trwałym zrzeszeniem o celach niezarobkowych i jest zawiązane dla prowadzenia działalności na rzecz szeroko rozumianej edukacji i ochrony środowiska, w tym głównie na rzecz humanitarnego traktowania zwierząt.
-
-    </p>
-    <p>
-        Siedzibą stowarzyszenia jest Miasto Poznań. Terenem działań jest Rzeczpospolita Polska oraz zagranica. Dla właściwego realizowania swoich celów Stowarzyszenie może prowadzić działalność poza granicami kraju, pod warunkiem, że prawo danego państwa dopuszcza taką działalność.
-
-    </p>
-    <p>Stowarzyszenie jest zawiązane na czas nieokreślony. Stowarzyszenie działa na podstawie przepisów ustawy Prawo o Stowarzyszeniach (Dz. U. 1989 r. Nr 20 poz. 104) z późniejszymi zmianami oraz niniejszego statutu.
-    </p>
-    <p>
-        Stowarzyszenie ma prawo używania pieczęci i logo. Wzór pieczęci i logo ustala Zarząd Stowarzyszenia.
-    </p>
-        <p><b>Rozdział 2. Cele i środki działania
-        </b></p>
-        <p>
-            § 6
-            Celami Stowarzyszenia są:
-
+      <h2 class="about-title first-title">Statut</h2>
+      <p class="rozdzial"><b>Rozdział 1. Postanowienia ogólne</b></p>
+      <div class="prawilo">
+        <p>§1</p>
+        <p>Stowarzyszenie nosi nazwę Stowarzyszenie „Otwarte Klatki” w dalszych postanowieniach statutu zwane Stowarzyszeniem.
         </p>
+      </div> 
+      <div class="prawilo">
+        <p>§2</p>
+        <p>Stowarzyszenie jest dobrowolnym, samorządnym i trwałym zrzeszeniem o celach niezarobkowych i jest zawiązane dla prowadzenia działalności na rzecz szeroko rozumianej edukacji i ochrony środowiska, w tym głównie na rzecz humanitarnego traktowania zwierząt.
+        </p>
+      </div> 
+      <div class="prawilo">
+        <p>§3</p>
+        <p>Siedzibą stowarzyszenia jest Miasto Poznań. Terenem działań jest Rzeczpospolita Polska oraz zagranica. Dla właściwego realizowania swoich celów Stowarzyszenie może prowadzić działalność poza granicami kraju, pod warunkiem, że prawo danego państwa dopuszcza taką działalność </p>
+      </div> 
+      <div class="prawilo">
+        <p>§4</p>
+        <p>Stowarzyszenie jest zawiązane na czas nieokreślony. Stowarzyszenie działa na podstawie przepisów ustawy Prawo o Stowarzyszeniach (Dz. U. 1989 r. Nr 20 poz. 104) z późniejszymi zmianami oraz niniejszego statutu.
+        </p>
+      </div> 
+      <div class="prawilo">
+        <p>§5</p>
+        <p>Stowarzyszenie nosi nazwę Stowarzyszenie „Otwarte Klatki” w dalszych postanowieniach statutu zwane Stowarzyszeniem.
+        </p>
+      </div> 
+      
+        <p class="rozdzial"><b>Rozdział 2. Cele i środki działania
+        </b></p>
+        <div class="prawilo">
+            <p>§6</p>
+            <p>Celami Stowarzyszenia są:
+                
+            </p>
+        </div> 
+        <div class="prawilo">
+            <p>§7</p>
+            <p>Stowarzyszenie swe cele realizuje przez: <br/> <br/> 
+                Organizowanie ogólnopolskich kampanii tematycznych, przeprowadzanych w sferze: informacyjnej, edukacyjnej, oświatowej i wychowawczej, kulturalnej, interwencyjnej (PKD 94.99.Z);
+                </p>
+        </div> 
     </div>
   
-    <div id="Tokyo" class=" tabslink tab-padding-finans" style="display:none">
-      <h2>Sprawozdanie finansowe</h2>
-     
+    <div id="Tokyo" class=" tabslink tab-padding-finans" style="display:block">
+      <h2 class="about-title first-title">Sprawozdanie finansowe</h2>
+      <div class="set-files">
+        <p><i class="far fa-file-pdf"></i>Sprawozdanie finansowe za rok 2021</p>
+        <p><i class="far fa-file-pdf"  ></i>Sprawozdanie finansowe za rok 2022</p>
+      </div>
+      
     </div>
   
   </div>
@@ -180,19 +201,19 @@
     </div>
 </footer>
 <script>
-    // function openCity(evt, cityName) {
-    //   var i, x, tablinks;
-    //   x = document.getElementsByClassName("city");
-    //   for (i = 0; i < x.length; i++) {
-    //     x[i].style.display = "none";
-    //   }
-    //   tablinks = document.getElementsByClassName("tabslink");
-    //   for (i = 0; i < x.length; i++) {
-    //     tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
-    //   }
-    //   document.getElementById(cityName).style.display = "block";
-    //   evt.currentTarget.className += " w3-red";
-    // }
+    function openCity(evt, cityName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tabslink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-red";
+    }
 
     
 
