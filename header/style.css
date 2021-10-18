@@ -524,7 +524,7 @@ footer .second-block .year{
 .tab-padding-finans{
     padding-bottom: 100px ;
 }
-.tab-about:active,
+.tabs-active,
 .tab-about:hover{
     color: #00997F;
     font-weight: bold;

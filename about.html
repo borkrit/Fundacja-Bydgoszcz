@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="wrapper mobile">
-            <img src="header/logo.png" alt="" class="logo">
+            <a href="/"> <img src="header/logo.png" alt="" class="logo" ></a>
             <div class="tabs topmenu" id="topmenu">
                 <ul id="mob-menu">
                     <li><a href="about.html"> O nas</a></li>
@@ -29,9 +29,9 @@
                 </ul>
                 <button class='tab-btn--red' type="button" onclick="window.location.href='prekaz.html'">Przekaż darowiznę</button>
                 
-                <a class="burger close" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-times"></i></a>
+                <a class="burger close" href="javascript:void(0);" onclick="closeMenu()"><i class="fa fa-times"></i></a>
             </div>
-            <a class="burger" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <a class="burger" href="javascript:void(0);" onclick="openMenu()"><i class="fa fa-bars"></i></a>
             
         </div>
     </header>
@@ -40,16 +40,16 @@
         
     <div class="tabs-about" >
     
-    <button class="tab-about"  onclick="openCity(event, 'London')">O nas</button>
-    <button class="tab-about"  onclick="openCity(event, 'Paris')">Statut</button>
-    <button class="tab-about"   onclick="openCity(event, 'Tokyo')">Sprawozdanie finansowe</button>
+    <button class="tab-about  tabs-active"  onclick="openCity(event,'London')">O nas</button>
+    <button class="tab-about"  onclick="openCity(event,'Paris')">Statut</button>
+    <button class="tab-about"   onclick="openCity(event,'Tokyo')">Sprawozdanie finansowe</button>
     
   </div>
   
   <div class="main-about">
     
   
-    <div id="London" class=" tabslink tab-padding-first" style="display:none">
+    <div id="London" class="tabslink tab-padding-first" >
       <h2 class="about-title first-title">Kim jesteśmy?</h2>
       <p class="about-text text-img">Maxwell's equations—the foundation of classical electromagnetism—describe light as a wave that moves with a characteristic velocity. The modern view is that light needs no medium of transmission, but Maxwell and his contemporaries were convinced that light waves were propagated in a medium, analogous to sound propagating in air, and ripples propagating on the surface of a pond.
         <br/>
@@ -143,7 +143,7 @@
         </div> 
     </div>
   
-    <div id="Tokyo" class=" tabslink tab-padding-finans" style="display:block">
+    <div id="Tokyo" class="tabslink tab-padding-finans" style="display:none">
       <h2 class="about-title first-title">Sprawozdanie finansowe</h2>
       <div class="set-files">
         <p><i class="far fa-file-pdf"></i>Sprawozdanie finansowe za rok 2021</p>
@@ -201,36 +201,44 @@
     </div>
 </footer>
 <script>
-    function openCity(evt, cityName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("city");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tabslink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " w3-red";
-    }
-
-    
-
-    
-
-//     function myFunction() {
-//     var x = document.getElementById("topmenu");
-//     if (x.style.display === "flex") {
-//         x.style.display = "flex";
-//         x.className.remove(" topmenu", "");
-//     document.getElementsByTagName('body')[0].style.overflow = 'visible'
-//   } else {
-//     x.style.display = "flex";
-//     x.className.add(" topmenu");
-//     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+//    function openCity(cityName) {
+//   var i;
+//   var x = document.getElementsByClassName("tabslink");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
 //   }
+//   document.getElementById(cityName).style.display = "block";  
 // }
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabslink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab-about");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" tabs-active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " tabs-active";
+}
+
+    
+
+    
+
+
+function openMenu(){
+    let menu = document.getElementById("topmenu");
+    menu.style.display = "flex";
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+}
+
+function closeMenu(){
+    let menu = document.getElementById("topmenu");
+    menu.style.display = "none";
+    document.getElementsByTagName('body')[0].style.overflow = 'visible'
+}
     </script>
 
     
