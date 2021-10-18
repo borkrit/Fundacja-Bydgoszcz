@@ -6,37 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <img src="logo.png" alt="" class="logo">
-            <div class="tabs">
-                <ul>
-                    <li>O nas</li>
-                    <li>Projekty</li>
-                    <li>Aktualności</li>
-                    <li>Blog</li>
-                    <li>Kontakt</li>
-                </ul>
-                <button class='tab-btn--red'>przekaż darowiznę</button>
-            </div>
+  <header>
+    <div class="wrapper">
+        <img src="header/logo.png" alt="" class="logo">
+        <div class="tabs">
+            <ul>
+                <li><a href="index.html"> O nas</a></li>
+                <li><a href="project.html">Projekty</a></li>
+                <li><a href="actual.html">Aktualności</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <button class='tab-btn--red' type="button" onclick="window.location.href='prekaz.html'">Przekaż darowiznę</button>
         </div>
-    </header>
+    </div>
+</header>
+
     <main class="wrapper">
         
-    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+    <div class="" style="width:130px">
     
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'London')">O nas</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Paris')">Statut</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Tokyo')">Sprawozdanie finansowe</button>
+    <button  onclick="openCity(event, 'London')">O nas</button>
+    <button  onclick="openCity(event, 'Paris')">Statut</button>
+    <button  onclick="openCity(event, 'Tokyo')">Sprawozdanie finansowe</button>
+    
   </div>
   
-<div style="margin-left:130px">
+  <div style="margin-left:130px">
     
   
     <div id="London" class="w3-container city" style="display:none">
@@ -54,7 +55,7 @@
     
     </div>
   
-    <div id="Paris" class="w3-container city" style="display:none">
+    <div id="Paris" class="w3-container city" >
       <h2>Statut</h2>
       <p> <b>Rozdział 1. Postanowienia ogólne</b></p> 
       <p>Stowarzyszenie nosi nazwę Stowarzyszenie „Otwarte Klatki” w dalszych postanowieniach statutu zwane Stowarzyszeniem.
@@ -87,9 +88,9 @@
     </div>
   
   </div>
-    </main>
+</main>
     
-<script>
+<!-- <script>
     function openCity(evt, cityName) {
       var i, x, tablinks;
       x = document.getElementsByClassName("city");
@@ -103,6 +104,6 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " w3-red";
     }
-    </script>
+    </script> -->
 </body>
 </html>

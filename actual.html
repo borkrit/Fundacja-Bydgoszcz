@@ -9,22 +9,30 @@
     
     <link rel="stylesheet" href="header/style.css">
     <link rel="stylesheet" href="header/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbeab37273.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper mobile">
             <img src="header/logo.png" alt="" class="logo">
-            <div class="tabs">
-                <ul>
-                    <li><a href="index.html"> O nas</a></li>
+            <div class="tabs topmenu" id="topmenu">
+                <ul id="mob-menu">
+                    <li><a href="about.html"> O nas</a></li>
                     <li><a href="project.html">Projekty</a></li>
                     <li><a href="actual.html">Aktualności</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
                 <button class='tab-btn--red' type="button" onclick="window.location.href='prekaz.html'">Przekaż darowiznę</button>
+                
+                <a class="burger close" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-times"></i></a>
             </div>
+            <a class="burger" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            
         </div>
     </header>
     <main>
@@ -107,7 +115,6 @@
         </div>
     </main>
 
-
     <footer>
         <div class="wrapper">
             <div class="first-block">
@@ -119,7 +126,7 @@
                     </div>
                 </div>
                 <div class="about-us">
-                    <p>Fundacja Nad Rzeką</p>
+                    <p class="foot-title">Fundacja Nad Rzeką</p>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
                 </div>
@@ -147,10 +154,45 @@
                     <p>tel.: +48 342 324 342</p>
                     <p>e-mail: kontakt@nadrzeka.pl</p>
                 </div>
+                <div class="year2">
+                    <p>2021 (c) Fundacja Nad Rzeką</p>
+                </div>
             </div>
         </div>
     </footer>
- 
-</body>
-
-</html>
+    <script>
+        // function openCity(evt, cityName) {
+        //   var i, x, tablinks;
+        //   x = document.getElementsByClassName("city");
+        //   for (i = 0; i < x.length; i++) {
+        //     x[i].style.display = "none";
+        //   }
+        //   tablinks = document.getElementsByClassName("tabslink");
+        //   for (i = 0; i < x.length; i++) {
+        //     tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+        //   }
+        //   document.getElementById(cityName).style.display = "block";
+        //   evt.currentTarget.className += " w3-red";
+        // }
+    
+        
+    
+        
+    
+    //     function myFunction() {
+    //     var x = document.getElementById("topmenu");
+    //     if (x.style.display === "flex") {
+    //         x.style.display = "flex";
+    //         x.className.remove(" topmenu", "");
+    //     document.getElementsByTagName('body')[0].style.overflow = 'visible'
+    //   } else {
+    //     x.style.display = "flex";
+    //     x.className.add(" topmenu");
+    //     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    //   }
+    // }
+        </script>
+    
+        
+    </body>
+    </html>
