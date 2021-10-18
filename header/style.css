@@ -714,6 +714,15 @@ footer .second-block .year{
     }
 }
 @media screen and (max-width: 768px) {
+    .wrapper-contact{
+        width: 96%;
+        padding: 10px;
+    }
+    
+    .wrapper-contact .block-phone {
+        flex-wrap: wrap;
+    }
+
     .burger{
         display: block;
     }
