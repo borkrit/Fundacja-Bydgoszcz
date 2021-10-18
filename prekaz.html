@@ -8,24 +8,31 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="header/style.css">
-    <!-- <link rel="stylesheet" href="header/header_main.css"> -->
     <link rel="stylesheet" href="header/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbeab37273.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper mobile">
             <img src="header/logo.png" alt="" class="logo">
-            <div class="tabs">
-                <ul>
-                    <li><a href="index.html"> O nas</a></li>
-                    <li><a href="/project.html">Projekty</a></li>
-                    <li><a href="/actual.html">Aktualności</a></li>
+            <div class="tabs topmenu" id="topmenu">
+                <ul id="mob-menu">
+                    <li><a href="about.html"> O nas</a></li>
+                    <li><a href="project.html">Projekty</a></li>
+                    <li><a href="actual.html">Aktualności</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="/contact.html">Kontakt</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
                 </ul>
-                <button class='tab-btn--red' type="button" onclick="window.location.href='/prekaz.html'">Przekaż darowiznę</button>
+                <button class='tab-btn--red' type="button" onclick="window.location.href='prekaz.html'">Przekaż darowiznę</button>
+                
+                <a class="burger close" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-times"></i></a>
             </div>
+            <a class="burger" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            
         </div>
     </header>
 
