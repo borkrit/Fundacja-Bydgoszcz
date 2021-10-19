@@ -18,20 +18,20 @@
 <body>
     <header>
         <div class="wrapper mobile">
-            <img src="header/logo.png" alt="" class="logo">
+            <a href="/"> <img src="header/logo.png" alt="" class="logo" ></a>
             <div class="tabs topmenu" id="topmenu">
                 <ul id="mob-menu">
-                    <li><a href="about.html"> O nas</a></li>
-                    <li><a href="project.html">Projekty</a></li>
-                    <li><a href="actual.html">Aktualności</a></li>
+                    <li><a href="/about.html"> O nas</a></li>
+                    <li><a href="/project.html">Projekty</a></li>
+                    <li><a href="/actual.html">Aktualności</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="/contact.html">Kontakt</a></li>
                 </ul>
                 <button class='tab-btn--red' type="button" onclick="window.location.href='prekaz.html'">Przekaż darowiznę</button>
                 
-                <a class="burger close" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-times"></i></a>
+                <a class="burger close" href="javascript:void(0);" onclick="closeMenu()"><i class="fa fa-times"></i></a>
             </div>
-            <a class="burger" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <a class="burger" href="javascript:void(0);" onclick="openMenu()"><i class="fa fa-bars"></i></a>
             
         </div>
     </header>
@@ -96,36 +96,19 @@
         </div>
     </footer>
     <script>
-        // function openCity(evt, cityName) {
-        //   var i, x, tablinks;
-        //   x = document.getElementsByClassName("city");
-        //   for (i = 0; i < x.length; i++) {
-        //     x[i].style.display = "none";
-        //   }
-        //   tablinks = document.getElementsByClassName("tabslink");
-        //   for (i = 0; i < x.length; i++) {
-        //     tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
-        //   }
-        //   document.getElementById(cityName).style.display = "block";
-        //   evt.currentTarget.className += " w3-red";
-        // }
+   
     
-        
-    
-        
-    
-    //     function myFunction() {
-    //     var x = document.getElementById("topmenu");
-    //     if (x.style.display === "flex") {
-    //         x.style.display = "flex";
-    //         x.className.remove(" topmenu", "");
-    //     document.getElementsByTagName('body')[0].style.overflow = 'visible'
-    //   } else {
-    //     x.style.display = "flex";
-    //     x.className.add(" topmenu");
-    //     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-    //   }
-    // }
+        function openMenu(){
+    let menu = document.getElementById("topmenu");
+    menu.style.display = "flex";
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+}
+
+function closeMenu(){
+    let menu = document.getElementById("topmenu");
+    menu.style.display = "none";
+    document.getElementsByTagName('body')[0].style.overflow = 'visible'
+}
         </script>
     
         

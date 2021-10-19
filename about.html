@@ -21,11 +21,11 @@
             <a href="/"> <img src="header/logo.png" alt="" class="logo" ></a>
             <div class="tabs topmenu" id="topmenu">
                 <ul id="mob-menu">
-                    <li><a href="about.html"> O nas</a></li>
-                    <li><a href="project.html">Projekty</a></li>
-                    <li><a href="actual.html">Aktualności</a></li>
+                    <li><a href="/about.html"> O nas</a></li>
+                    <li><a href="/project.html">Projekty</a></li>
+                    <li><a href="/actual.html">Aktualności</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="/contact.html">Kontakt</a></li>
                 </ul>
                 <button class='tab-btn--red' type="button" onclick="window.location.href='prekaz.html'">Przekaż darowiznę</button>
                 
@@ -201,14 +201,7 @@
     </div>
 </footer>
 <script>
-//    function openCity(cityName) {
-//   var i;
-//   var x = document.getElementsByClassName("tabslink");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   document.getElementById(cityName).style.display = "block";  
-// }
+
 function openCity(evt, cityName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("tabslink");
@@ -231,13 +224,13 @@ function openCity(evt, cityName) {
 function openMenu(){
     let menu = document.getElementById("topmenu");
     menu.style.display = "flex";
-    document.getElementsByTagName('body')[0].style.overflow = 'visible'
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden'
 }
 
 function closeMenu(){
     let menu = document.getElementById("topmenu");
     menu.style.display = "none";
-    document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+    document.getElementsByTagName('body')[0].style.overflow = 'visible'
 }
     </script>
 
