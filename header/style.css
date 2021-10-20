@@ -498,9 +498,9 @@ footer .second-block .year{
 .about-img img{
     width: inherit;
 }
-.tabs-about{
-    /* width: 320px; */
-}
+/* .tabs-about{
+     width: 320px; 
+} */
 .tab-about{
     width: 100%;
     font-family: var(--montserrat);
@@ -595,7 +595,39 @@ footer .second-block .year{
     width: 280px;
     height: 400px;
     object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
 }
+.project-text .project-title{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #00997F;
+}
+.project-text-content{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+}
+.more-inf a{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #00997F;
+
+}
+
+
 .post-wrapper-text{
     width: 769px;
     margin: auto;
