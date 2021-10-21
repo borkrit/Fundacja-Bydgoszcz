@@ -36,6 +36,7 @@ header{
     top: 0; */
 
 }
+
 .wrapper{
     width: calc(100vw - 260px);
     margin: auto;
@@ -70,7 +71,7 @@ main{
     font-family: var(--lora);
     font-style: italic;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 56px;
     color: #FFFFFF;
 }
@@ -202,7 +203,9 @@ main{
     margin: 60px 0;
 }
 
-
+.withbg{
+    background: none;
+}
 
 
 .actual-item{
@@ -335,6 +338,7 @@ color: #00705D;
     margin-top: 80px;
     display: flex;
      justify-content: space-evenly;
+     flex-wrap: wrap;
 }
 .wspolpraca img{
     object-fit: contain;
@@ -688,7 +692,7 @@ footer .second-block .year{
     overflow: hidden;
 }
 .w-380{
-    width: 380px;
+    width: 100%;
     object-fit: contain;
 }
 .w-680{
@@ -778,8 +782,12 @@ footer .second-block .year{
     color: #111111;
     
 }
-
-
+.im-coop img{
+    width: auto;
+}
+.wr{
+    gap: 39px;
+}
 
 /* Media query  */
 @media screen and (max-width: 1104px) {
@@ -806,6 +814,9 @@ footer .second-block .year{
     
 }
 @media screen and (max-width: 959px) {
+    .mb80{
+        width: 48%;
+    }
     .wrapper-contact{
         width: 96%;
         padding: 10px;
@@ -858,7 +869,7 @@ footer .second-block .year{
     }
     .actual-item{
         margin-top: 25px;
-        width: 100%; 
+        width: 48%; 
     }
     
     .wrapper {
@@ -894,11 +905,26 @@ footer .second-block .year{
 
 }
 @media screen and (max-width:861px) {
+    .wr{
+        flex-wrap: wrap;
+    }
+    .second-content-img {
+        width: 40%;
+    }
+    .wr .text-content{
+        width: 50%;
+    }
+    .wr .text-content p{
+        font-size: 15px;
+    }
     .project{
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
        
+    }
+    .post-wrapper-text{
+        width: 100%;
     }
     .project-text .project-title {
         font-size: 20px;
@@ -919,9 +945,25 @@ footer .second-block .year{
    
 }
 @media screen and (max-width: 652px) {
-    .project-wrapper{
+    .second-screen{
+        padding: 50px 0;
+    }
+    
+    .second-content-img{
+        width: 100%;
+    }
+    .wr .text-content{
+        width: 100%;
+    }
+    .actual-item{
+        
+        width: 45%; 
+    }
+    .project-wrapper,
+    .post-wrapper{
         width: calc(100% - 60px);
     }
+    
     .project-text-content{
         padding: 10px 0;
     }
@@ -987,8 +1029,49 @@ footer .second-block .year{
 
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 546px) {
+    .im-coop .img-block{
+        width: 50%
+    }
+    .first-p{
+        width: 500px;
+    }
+    .w-480,
+    .w-580,
+    .w-680{
+        width: 100%;
+        margin-right: 0;
+    }
+    .actual-item{
+        width: 100%;
+    }
+    .actual-item img{
+        height: auto;
+    }
+    .w-380{
+        display: flex;
+        justify-content: center;
     
+    }
+    
+    .content-five h3{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 468px) {
+    .project-img img{
+        height: auto;
+    }
+    .second-content-img{
+        height: auto;
+    }
+    .second-screen h2{
+        font-size: 30px;
+    }
+    .first-p{
+        width: 250px;
+        font-size: 25px
+    }
     .wrapper {
         width: calc(100vw - 35px);
     }
@@ -1006,9 +1089,21 @@ footer .second-block .year{
     .flex-colom-re{
         flex-direction: column-reverse;
     }
+    .wspolpraca {
+      
+        gap: 45px;
+    }
     
 }
 @media screen and (max-width: 374px) {
+    .im-coop .img-block{
+        width: 100%
+    }
+    .wspolpraca {
+      
+        gap: 74px;
+    }
+    
    .about-title{
        font-size: 35px;
    }

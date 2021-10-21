@@ -7,8 +7,11 @@ header{
     background: none;
 }
 header{
-    color:white;
+    color:white !;
 
+}
+.tabs ul li a{
+    color: white;
 }
 .logo{
     filter: brightness(73);
