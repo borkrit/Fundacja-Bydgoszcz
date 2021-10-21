@@ -585,11 +585,16 @@ footer .second-block .year{
 .project-wrapper{
     width: calc(100% - 260px);
     margin: 100px auto 150px ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 }
 .project{
     background: white;
     display: flex;
     align-items: center;
+    gap: 40px;
+    border-radius: 8px;
 }
 .project-img img{
     width: 280px;
@@ -597,6 +602,9 @@ footer .second-block .year{
     object-fit: cover;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
+}
+.project-text{
+    width: 70%;
 }
 .project-text .project-title{
     font-family: var(--montserrat);
@@ -613,6 +621,7 @@ footer .second-block .year{
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    padding: 30px 70px 30px 0;
     color: #111111;
 }
 .more-inf a{
@@ -786,6 +795,16 @@ footer .second-block .year{
         margin-right: 0;
     }
 }
+@media screen and (max-width: 1040px) { 
+    .project-text .project-title{
+        font-size: 26px;
+    }
+    .project-text-content{
+        line-height: 21px;
+        font-size: 16px;
+    }
+    
+}
 @media screen and (max-width: 959px) {
     .wrapper-contact{
         width: 96%;
@@ -874,8 +893,38 @@ footer .second-block .year{
     }
 
 }
-
+@media screen and (max-width:861px) {
+    .project{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+       
+    }
+    .project-text .project-title {
+        font-size: 20px;
+    }
+    .project-img{
+        width: 100%;
+    }
+    .project-img img{
+        width:100%;
+        object-fit: cover;
+        border-radius:8px;
+    }
+    .project-text {
+        width: 80%;}
+    .more-inf {
+        padding-bottom: 20px;
+    }
+   
+}
 @media screen and (max-width: 652px) {
+    .project-wrapper{
+        width: calc(100% - 60px);
+    }
+    .project-text-content{
+        padding: 10px 0;
+    }
     footer{
         height: max-content;
         padding: 20px;
@@ -939,6 +988,7 @@ footer .second-block .year{
 }
 
 @media screen and (max-width: 468px) {
+    
     .wrapper {
         width: calc(100vw - 35px);
     }
